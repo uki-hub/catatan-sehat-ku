@@ -1,3 +1,4 @@
+import 'package:catatan_sehat_ku/services/database_service.dart';
 import 'package:catatan_sehat_ku/src/app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,7 +11,7 @@ class BoxSuggestion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.only(right: 15, left: 15, top: 15, bottom: 10),
+      padding: const EdgeInsets.only(right: 15, left: 15, top: 15, bottom: 10),
       decoration: BoxDecoration(
         color: App.color.surfaceContainerHigh,
         borderRadius: BorderRadius.circular(12),
@@ -39,17 +40,20 @@ class BoxSuggestion extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 5),
-            decoration: BoxDecoration(
-              color: App.color.tertiaryContainer,
-              borderRadius: BorderRadius.circular(7),
-            ),
-            child: Text(
-              "Suggestion",
-              textAlign: TextAlign.center,
-              style: App.text.labelLarge!.copyWith(color: App.color.onSecondaryContainer),
+          GestureDetector(
+            onTap: () => DatabaseService().writeData(),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 5),
+              decoration: BoxDecoration(
+                color: App.color.tertiaryContainer,
+                borderRadius: BorderRadius.circular(7),
+              ),
+              child: Text(
+                "Suggestion",
+                textAlign: TextAlign.center,
+                style: App.text.labelLarge!.copyWith(color: App.color.onSecondaryContainer),
+              ),
             ),
           ),
           const SizedBox(height: 5),
