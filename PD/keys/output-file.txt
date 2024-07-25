@@ -1,0 +1,37 @@
+Keystore type: JKS
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: my-key-alias
+Creation date: Jul 18, 2024
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Uki, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown
+Issuer: CN=Uki, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown
+Serial number: 207eceee
+Valid from: Thu Jul 18 05:39:46 ICT 2024 until: Mon Dec 04 05:39:46 ICT 2051
+Certificate fingerprints:
+	 SHA1: D7:7E:8B:23:D0:06:02:C0:B0:13:14:5F:37:D3:2B:C7:86:07:C8:FC
+	 SHA256: EC:72:45:A1:CB:FB:A0:EF:9D:01:04:96:43:B8:A2:74:1B:85:57:DD:B4:D4:CC:4A:87:FA:56:FD:D5:D8:AE:BF
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: A9 1D 82 BD 05 71 D4 CB   20 E6 EA 88 34 21 F1 82  .....q.. ...4!..
+0010: C0 2A 3C 93                                        .*<.
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+

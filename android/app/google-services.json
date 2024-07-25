@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "753914104366",
+    "project_id": "catatansehatku02",
+    "storage_bucket": "catatansehatku02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753914104366:android:05ed5ce3a2f522332f2dbf",
+        "android_client_info": {
+          "package_name": "com.example.catatan_sehat_ku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU5CZnPMI2vGrdwFUTwavbokrDDeoe9Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

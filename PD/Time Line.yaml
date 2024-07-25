@@ -1,0 +1,86 @@
+project_timeline:
+  July_4:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Review Functional Specification Document (FSD)
+        - Define user stories and tasks
+        - Prepare project plan
+
+  July_5:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Finalize wireframes/mockups
+        - Set up Firebase authentication
+
+  July_6:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Finalize database schema (Firestore)
+        - Prepare detailed timeline for implementation
+
+  July_7:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Implement authentication screens
+        - Set up Firestore for user profiles
+
+  July_8:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Implement UI for health data input (Weight)
+
+  July_9:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Implement UI for health data input (Blood Pressure)
+        - Start integration with Google Maps API
+
+  July_10:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Implement UI for health data input (Blood Sugar Level)
+
+  July_11:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Implement UI for health data input (Cholesterol Level)
+
+  July_12:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Develop AI-driven chatbot (basic functionality)
+
+  July_13:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Implement PDF report generation
+        - Implement memory game for cognitive testing
+
+  July_14:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Continue integration with Google Maps API
+
+  July_15:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Testing and debugging (authentication and health data input)
+
+  July_16:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Testing and debugging (Google Maps integration, AI chatbot)
+
+  July_17:
+    - time_range: "5 PM - 12 AM"
+      tasks:
+        - Testing and debugging (PDF report generation, memory game)
+        - Finalize UI/UX improvements based on testing feedback
+
+  July_20:
+    - time_range: "5 PM - 10 PM"
+      tasks:
+        - Prepare release version of the app
+        - Write user documentation
+        - Deploy app to Firebase/hosting
+        - Submit app to app stores (if applicable)

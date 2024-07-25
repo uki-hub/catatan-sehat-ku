@@ -1,0 +1,112 @@
+project:
+  name: Personal Health Record Mobile App
+  description: >
+    A mobile application to manage personal and family health records, built using Flutter and Firebase.
+
+scope:
+  in_scope:
+    - Authentication and authorization
+    - Health data management (weight, blood pressure, etc.)
+    - Family health management
+    - PDF health report generation
+    - Hospital search using Google Maps API
+    - AI doctor chatbot
+    - Memory game for cognitive testing
+  out_of_scope:
+    - Integration with external medical devices
+    - Payment processing for medical services
+
+functional_requirements:
+  authentication:
+    feature: Login as personal or family
+    business_logic: >
+      Users can authenticate via Firebase using email/password or other supported methods.
+      Personal login allows managing own health records.
+      Family login allows managing own health records and adding/managing family members.
+
+  health_data_management:
+    feature: Track 4 health metrics
+    metrics:
+      - name: Weight
+        description: Track weight changes over time.
+        business_logic: >
+          Users can log their weight daily or at regular intervals.
+          The app calculates BMI (Body Mass Index) based on weight and height, providing insights into health trends.
+          Charts show weight fluctuations over selected time periods, aiding users in monitoring weight management goals.
+
+      - name: Blood Pressure
+        description: Monitor blood pressure readings.
+        business_logic: >
+          Users can record systolic and diastolic blood pressure readings.
+          The app categorizes blood pressure levels (normal, high, low) and provides visual trends over time.
+          Alerts users for readings outside normal ranges, promoting timely medical consultation.
+
+      - name: Sleep Duration
+        description: Track daily sleep duration.
+        business_logic: >
+          Users can record their nightly sleep duration.
+          The app tracks sleep patterns over time, providing insights into sleep quality and recommending improvements.
+
+      - name: Cholesterol Level
+        description: Track cholesterol levels for heart health.
+        business_logic: >
+          Users can log total cholesterol, HDL (good cholesterol), and LDL (bad cholesterol) levels.
+          The app provides cholesterol ratio calculations and interprets levels based on health guidelines.
+          Graphical representations illustrate cholesterol trends, assisting users in maintaining heart health.
+
+    business_logic: >
+      Users can input and update health data for selected metrics.
+      Data is stored securely in Firebase Firestore.
+      Historical data can be viewed and trends visualized using charts.
+
+  pdf_report_generation:
+    feature: Generate PDF health reports
+    business_logic: >
+      Users can select a date range to generate a PDF report of their health records.
+      Reports include selected health metrics and their trends over time.
+
+  hospital_search:
+    feature: Search nearest hospitals
+    business_logic: >
+      Integration with Google Maps API to fetch and display nearby hospitals based on user's location.
+      Users can view hospital details and navigate using map directions.
+
+  ai_doctor_chat:
+    feature: AI-driven chatbot for medical advice
+    business_logic: >
+      Users can ask health-related questions to the chatbot.
+      Chatbot provides responses based on a pre-defined medical knowledge base.
+      Option to escalate to human support if needed.
+
+  memory_game_test:
+    feature: Cognitive testing with memory game
+    business_logic: >
+      Users can take memory tests within the app to assess cognitive function.
+      Scores are recorded for personal tracking and improvement.
+
+system_architecture:
+  overview: >
+    Mobile app developed using Flutter for frontend and Firebase for backend services.
+  components:
+    - Flutter: Framework for UI and business logic
+    - Firebase Auth: Authentication service
+    - Firebase Firestore: Database for storing health data
+
+assumptions_constraints:
+  assumptions:
+    - Stable internet connection available for real-time data sync.
+    - Compliance with Google Maps API terms and conditions.
+  constraints:
+    - App functionality limited by Firebase scalability and pricing plans.
+
+risks_mitigation_strategies:
+  risks:
+    - Privacy concerns with health data storage.
+    - Dependency on third-party APIs like Google Maps.
+  mitigation_strategies:
+    - Implement strong encryption and data security measures for health records.
+    - Have contingency plans for API service interruptions.
+
+appendix:
+  glossary: Definitions of technical terms used.
+  references: Links to Firebase and Flutter documentation.
